@@ -1,0 +1,171 @@
+.playing{
+    height: 100vh;
+    position: relative;
+    font-family:Helvetica, sans-serif;
+    overflow: hidden;
+}
+.playing::after{
+    content:'';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+    top:0;
+    left:0;
+    filter: blur(50px) brightness(0.5);
+}
+.playing .point{
+    height: 137px;
+    width:96px;
+    background: url(http://ovmr7ndid.bkt.clouddn.com/point.png);
+    background-size: cover;
+    margin-left:calc(50% - 15px);
+    position: relative;
+    z-index: 5;
+}
+.playing .point.pause{
+    transform-origin: 0 0;
+    transform: rotateZ(-20deg);
+    animation-duration:0.2s;
+}
+.playing .wrapper{
+    margin-top:-67px;
+    position: relative;
+}
+.playing .wrapper #icon-play{
+    width:56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    top:calc(50% - 28px);
+    left:calc(50% - 28px);
+    padding:2px;
+    background: rgba(0,0,0,0.2) url(http://ovmr7ndid.bkt.clouddn.com/%E6%92%AD%E6%94%BE.png) no-repeat;
+    background-size: cover;
+}
+.playing .wrapper #icon-pause{
+    width:56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    top:calc(50% - 28px);
+    left:calc(50% - 28px);
+    background: rgba(0,0,0,0.2) url(http://ovmr7ndid.bkt.clouddn.com/%E6%9A%82%E5%81%9C.png) no-repeat;
+    background-size: cover;
+}
+.playing .wrapper.pause #icon-pause{
+    display: none;
+}
+.playing .wrapper.play #icon-play{
+    display: none;
+}
+.playing .wrapper .circle{
+    height: 296px;
+    width:296px;
+    margin:0 auto;
+    background: url(http://ovmr7ndid.bkt.clouddn.com/circle1.png);
+    background-size: cover;
+    position: relative;
+}
+.playing .wrapper.play .circle{    
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate{
+    0%{
+      transform: rotateZ(0deg);
+    }
+    100%{
+      transform: rotateZ(360deg);
+    }
+  }
+.playing .wrapper .circle::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: url(http://ovmr7ndid.bkt.clouddn.com/circle2.png);
+    background-size: cover;
+}
+.playing .wrapper .circle .cover{
+    width:184px;
+    height: 184px;
+    position: absolute;
+    top:calc(50% - 92px);
+    left:calc(50% - 92px);
+}
+.playing .wrapper .circle .cover img{
+    width:calc(100% - 2px);
+    height:calc(100% - 2px);
+    border:1px solid #bbb;
+    border-radius:50%;
+}
+.playing .name{
+    color:white;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.playing .name span{
+    font-size: 16px;
+    color: hsla(0,0%,100%,.6);
+}
+.playing .lyric{
+    height: 96px;
+    overflow: hidden;
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: hsla(0,0%,100%,.6);
+}
+.playing .lyric .content p{
+    padding-bottom: 8px;
+}
+.playing .nnnnn1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 82px;
+    width: 100%;
+    z-index: 9;
+}
+.playing .more{
+    position: absolute;
+    bottom:20px;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.playing .more a{
+    display: block;
+}
+.playing .more .open{
+    height:42px;
+    width:140px;
+    color:#d43b32;
+    border:1px solid #d43b32;
+    border-radius: 4px;
+    padding-top:11px;
+    padding-left:48px;
+}
+.playing .more .download{
+    height:42px;
+    width:140px;
+    color:#fff;
+    background: #d43b32;
+    margin-left: 3.2vw;
+    border-radius: 4px;
+    padding-top:12px;
+    padding-left:49px;
+}
+
+

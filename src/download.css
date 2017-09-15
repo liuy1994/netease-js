@@ -1,0 +1,49 @@
+.page{
+    width:100vw;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    flex-direction:column;
+    align-items: center; 
+    
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    background: url(http://p3.music.126.net/3PJacreCq-eDuVDU4RFTQA==/18935789253812331.jpg);
+}
+h5{
+    font-size: 13px;
+    padding-top:16px;
+    cursor: default;
+}
+p{
+    font-size: 13px;
+}
+p span{
+    font-family: simsun,\5b8b\4f53;
+}
+.open{
+    font-size: 12px;
+    color:#999;
+    padding-top:16px;
+}
+.open a{
+    text-decoration: underline;
+}
+.logo{
+    width:108px;
+    height: 108px;
+    margin-top: 114px;
+    background: url(http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg) no-repeat 0px 0px;
+    background-size: cover;
+}
+.download{
+    border:1px solid #7c6a69;
+    border-radius: 4px;
+    background: #311412;
+    margin-top:40px;
+    padding-top: 7px;
+    font-size: 24px;
+    height: 48px;
+    width:190px;
+    text-align: center;
+    
+}
